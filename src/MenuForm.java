@@ -16,7 +16,7 @@ public class MenuForm extends JFrame{
 	private JRadioButton muzykaOffRadioButton;
 
 	public MenuForm() {
-		super("Hello");
+		super("Szachy");
 		setContentPane(root);
 		pack();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,6 +24,12 @@ public class MenuForm extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				opcjeCzasu o = new opcjeCzasu();
+			}
+		});
+		ZAGADKITAKTYCZNEButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				PuzzleForm o = new PuzzleForm();
 			}
 		});
 

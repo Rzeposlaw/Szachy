@@ -18,10 +18,16 @@ public class opcjeCzasu extends JFrame{
     private JRadioButton STANDARDRadioButton;
 
     public opcjeCzasu() {
-        super("Hello");
+        super("Opcje czasu");
         setContentPane(root2);
         pack();
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        OKButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Game1Form o = new Game1Form();
+            }
+        });
         setVisible(true);
     }
 
